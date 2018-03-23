@@ -1,6 +1,16 @@
 {
   "name": "visual",
   "dependencies": {
-    "powerbi-visuals-utils-dataviewutils": "1.2.0"
+    "@types/d3": "^3.5.36",
+    "@types/jquery": "^2.0.46",
+    "@types/lodash": "^4.14.52",
+    "d3": "^3.5.17",
+    "lodash": "^4.16.2",
+    "powerbi-visuals-utils-colorutils": "^1.0.0",
+    "powerbi-visuals-utils-dataviewutils": "1.2.0",
+    "powerbi-visuals-utils-interactivityutils": "^3.1.0",
+    "powerbi-visuals-utils-svgutils": "^1.1.0",
+    "powerbi-visuals-utils-tooltiputils": "^1.0.0",
+    "typescript": "^2.3.4"
   }
 }
