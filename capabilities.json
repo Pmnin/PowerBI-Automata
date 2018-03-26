@@ -1,13 +1,13 @@
 {
     "dataRoles": [
         {
-            "displayName": "Category Data",
-            "name": "category",
+            "displayName": "Regroupement 1",
+            "name": "regroupement 1",
             "kind": "Grouping"
         },
         {
-            "displayName": "Measure Data",
-            "name": "measure",
+            "displayName": "Mesure 1",
+            "name": "mesure 1",
             "kind": "Measure"
         }
     ],
@@ -63,7 +63,7 @@
             "categorical": {
                 "categories": {
                     "for": {
-                        "in": "category"
+                        "in": "regroupement 1"
                     },
                     "dataReductionAlgorithm": {
                         "top": {}
@@ -72,9 +72,9 @@
                 "values": {
                     "select": [
                         {
-                            "bind": {
-                                "to": "measure"
-                            }
+                          "bind": {
+                            "to": "mesure 1"
+                          }
                         }
                     ]
                 }

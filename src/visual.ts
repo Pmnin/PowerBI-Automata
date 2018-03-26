@@ -33,6 +33,11 @@ module powerbi.extensibility.visual {
         private textNode: Text;
 
         constructor(options: VisualConstructorOptions) {
+
+
+
+            /// PBI Custom Visual Standard Example
+            /*
             console.log('Visual constructor', options);
             this.target = options.element;
             this.updateCount = 0;
@@ -45,14 +50,25 @@ module powerbi.extensibility.visual {
                 new_p.appendChild(new_em);
                 this.target.appendChild(new_p);
             }
+            */
+
+
+            
         }
 
         public update(options: VisualUpdateOptions) {
+
+
+            /// PBI Custom Visual Standard Example
+            /*
             this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
             console.log('Visual update', options);
             if (typeof this.textNode !== "undefined") {
                 this.textNode.textContent = (this.updateCount++).toString();
             }
+            */
+
+
         }
 
         private static parseSettings(dataView: DataView): VisualSettings {
