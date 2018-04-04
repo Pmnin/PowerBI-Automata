@@ -9,16 +9,12 @@
   },
   "files": [
     ".api/v1.10.0/PowerBI-visuals.d.ts",
-    "node_modules/powerbi-visuals-utils-colorutils/lib/index.d.ts",
     "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.d.ts",
-    "node_modules/powerbi-visuals-utils-interactivityutils/lib/index.d.ts",
-    "node_modules/powerbi-visuals-utils-svgutils/lib/index.d.ts",
-    "node_modules/powerbi-visuals-utils-tooltiputils/lib/index.d.ts",
     "node_modules/powerbi-visuals-utils-typeutils/lib/index.d.ts",
     "node_modules/@types/d3/index.d.ts",
     "node_modules/@types/jquery/index.d.ts",
     "node_modules/@types/lodash/index.d.ts",
-    "node_modules/phaser-ce/typescript/phaser.d.ts",
+    "node_modules/excalibur/dist/excalibur.d.ts",
     "src/settings.ts",
     "src/Game.ts",
     "src/visual.ts"
