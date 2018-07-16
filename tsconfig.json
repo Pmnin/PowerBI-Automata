@@ -1,22 +1,20 @@
 {
   "compilerOptions": {
+    "module": "amd",
     "allowJs": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "ES5",
+    "target": "es6",
     "sourceMap": true,
-    "out": "./.tmp/build/visual.js"
+    "outDir": "./.tmp/build/"
   },
   "files": [
     ".api/v1.10.0/PowerBI-visuals.d.ts",
-    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.d.ts",
-    "node_modules/powerbi-visuals-utils-typeutils/lib/index.d.ts",
     "node_modules/@types/d3/index.d.ts",
     "node_modules/@types/jquery/index.d.ts",
     "node_modules/@types/lodash/index.d.ts",
+    "node_modules/@types/node/index.d.ts",
     "node_modules/excalibur/dist/excalibur.d.ts",
-    "src/settings.ts",
-    "src/Game.ts",
     "src/visual.ts"
   ]
 }

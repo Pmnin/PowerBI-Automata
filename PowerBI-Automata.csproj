@@ -73,6 +73,14 @@
     <None Include="node_modules\eventemitter3\LICENSE" />
     <None Include="node_modules\eventemitter3\package.json" />
     <None Include="node_modules\eventemitter3\README.md" />
+    <None Include="node_modules\excalibur\.travis.yml" />
+    <None Include="node_modules\excalibur\bower.json" />
+    <None Include="node_modules\excalibur\dist\excalibur.amd.js.map" />
+    <None Include="node_modules\excalibur\dist\excalibur.js.map" />
+    <None Include="node_modules\excalibur\dist\excalibur.min.js.map" />
+    <None Include="node_modules\excalibur\LICENSE.md" />
+    <None Include="node_modules\excalibur\package.json" />
+    <None Include="node_modules\excalibur\README.md" />
     <None Include="node_modules\lodash\LICENSE" />
     <None Include="node_modules\lodash\package.json" />
     <None Include="node_modules\lodash\README.md" />
@@ -471,6 +479,8 @@
     <TypeScriptCompile Include="node_modules\%40types\lodash\zipWith\index.d.ts" />
     <TypeScriptCompile Include="node_modules\%40types\lodash\zip\index.d.ts" />
     <TypeScriptCompile Include="node_modules\eventemitter3\index.d.ts" />
+    <TypeScriptCompile Include="node_modules\excalibur\dist\excalibur.amd.d.ts" />
+    <TypeScriptCompile Include="node_modules\excalibur\dist\excalibur.d.ts" />
     <TypeScriptCompile Include="node_modules\powerbi-visuals-utils-colorutils\lib\index.d.ts" />
     <TypeScriptCompile Include="node_modules\powerbi-visuals-utils-dataviewutils\lib\index.d.ts" />
     <TypeScriptCompile Include="node_modules\powerbi-visuals-utils-interactivityutils\lib\index.d.ts" />
@@ -509,8 +519,7 @@
     <TypeScriptCompile Include="node_modules\typescript\lib\tsserverlibrary.d.ts" />
     <TypeScriptCompile Include="node_modules\typescript\lib\typescript.d.ts" />
     <TypeScriptCompile Include="node_modules\typescript\lib\typescriptServices.d.ts" />
-    <TypeScriptCompile Include="src\Game.ts" />
-    <TypeScriptCompile Include="src\settings.ts" />
+    <TypeScriptCompile Include="src\Jeu.ts" />
     <TypeScriptCompile Include="src\visual.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -818,6 +827,10 @@
     <Content Include="node_modules\d3\src\xhr\xml.js" />
     <Content Include="node_modules\eventemitter3\index.js" />
     <Content Include="node_modules\eventemitter3\umd\eventemitter3.min.js" />
+    <Content Include="node_modules\excalibur\.gitattributes" />
+    <Content Include="node_modules\excalibur\dist\excalibur.amd.js" />
+    <Content Include="node_modules\excalibur\dist\excalibur.js" />
+    <Content Include="node_modules\excalibur\dist\excalibur.min.js" />
     <Content Include="node_modules\lodash\add.js" />
     <Content Include="node_modules\lodash\after.js" />
     <Content Include="node_modules\lodash\array.js" />
