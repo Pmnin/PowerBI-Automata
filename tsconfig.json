@@ -2,11 +2,14 @@
   "compilerOptions": {
     "module": "amd",
     "allowJs": true,
+    "checkJs": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "pretty": true,
+    "alwaysStrict": true,
     "target": "es6",
     "sourceMap": true,
-    "outDir": "./.tmp/build/"
+    "out": "./.tmp/build/visual.js"
   },
   "files": [
     ".api/v1.10.0/PowerBI-visuals.d.ts",

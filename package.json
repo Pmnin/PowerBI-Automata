@@ -4,8 +4,14 @@
   "scripts": {
     "postinstall": "pbiviz update 1.12.0",
     "pbiviz": "pbiviz",
+    "version": "pbiviz -V",
+    "help-start": "pbiviz help start",
     "start": "pbiviz start",
-    "test": "pbiviz package -- resources --no-minify --no-pbiviz"
+    "test": "pbiviz package -- resources --no-minify --no-pbiviz",
+    "create-cert": "pbiviz --create-cert",
+    "install-cert": "pbiviz --install-cert",
+    "update": "pbiviz update",
+    "update-beta": "pbiviz update beta"
   },
   "dependencies": {
     "@types/d3": "^3.5.41",
@@ -17,5 +23,8 @@
     "lodash": "^4.17.10",
     "powerbi-visuals-tools": "^2.0.1",
     "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/powerbi-visuals-tools": "^1.11.0"
   }
 }

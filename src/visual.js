@@ -1,3 +1,4 @@
+"use strict";
 /*
  *  Power BI Visual CLI
  *
@@ -23,50 +24,26 @@
  *  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  *  THE SOFTWARE.
  */
-
-//"use strict"; Disabled or --alwaysStrict in tsconfig.json
-
-import powerbi from "powerbi-visuals-tools";
-
-//import extensibility = powerbi.extensibility;
-
-import IVisual = powerbi.extensibility.IVisual;
-import VisualConstructorOptions = powerbi.extensibility.visual.VisualConstructorOptions;
-import VisualUpdateOptions = powerbi.extensibility.visual.VisualUpdateOptions;
-import EnumerateVisualObjectInstancesOptions = powerbi.EnumerateVisualObjectInstancesOptions;
-import VisualObjectInstance = powerbi.VisualObjectInstance;
-import VisualObjectInstanceEnumerationObject = powerbi.VisualObjectInstanceEnumerationObject;
-import DataView = powerbi.DataView;
-
-import * as d3 from "d3";
-import * as ex from "excalibur";
-    
-export class Visual implements IVisual {
-    private target: HTMLElement;
-    private updateCount: number;
-    private textNode: Text;
-
-    constructor(options: VisualConstructorOptions) {
-
+Object.defineProperty(exports, "__esModule", { value: true });
+//"use strict";
+class Visual {
+    constructor(options) {
         /// PBI Custom Visual Standard Example
         console.log("Just trying to set this up..");
         console.log('Visual constructor', options);
         this.target = options.element;
         this.updateCount = 0;
         if (typeof document !== "undefined") {
-            const new_p: HTMLElement = document.createElement("p");
+            const new_p = document.createElement("p");
             new_p.appendChild(document.createTextNode("Update count:"));
-            const new_em: HTMLElement = document.createElement("em");
+            const new_em = document.createElement("em");
             this.textNode = document.createTextNode(this.updateCount.toString());
             new_em.appendChild(this.textNode);
             new_p.appendChild(new_em);
             this.target.appendChild(new_p);
         }
-
     }
-
-    public update(options: VisualUpdateOptions) {
-        
+    update(options) {
         /// PBI Custom Visual Standard Example
         console.log("Just trying to set this up..");
         //this.settings = Visual.parseSettings(options && options.dataViews && options.dataViews[0]);
@@ -74,6 +51,7 @@ export class Visual implements IVisual {
         //if (typeof this.textNode !== "undefined") {
         //    this.textNode.textContent = (this.updateCount++).toString();
         //}
-
     }
 }
+exports.Visual = Visual;
+//# sourceMappingURL=visual.js.map
